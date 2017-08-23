@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#"
+     xml:base="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen"
+     xmlns:ar="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="https://www.w3.org/2006/time#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasAdministration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasAdministration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAdministrationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasAuthority -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasAuthority">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAuthorityOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Administration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasJurisdiction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasJurisdiction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isJurisdictionOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasOffice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasOffice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isOfficeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAdministrationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAdministrationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAuthorityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAuthorityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Administration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isJurisdictionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isJurisdictionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isOfficeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isOfficeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasBeginning -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasBeginning"/>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#hasEnd">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Administration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Administration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#ProperInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Autoridad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Autoridad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Instant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Interval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefaturaDeGabineteDeMinistros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefaturaDeGabineteDeMinistros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Office"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefeDeGabinete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefeDeGabinete">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Autoridad"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAuthorityOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefaturaDeGabineteDeMinistros"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Autoridad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Office"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministro">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Autoridad"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#isAuthorityOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Autoridad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Agent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#ProperInterval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#ProperInterval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#TemporalEntity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefaturaDeGabineteDeMinistros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefaturaDeGabineteDeMinistros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefaturaDeGabineteDeMinistros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Jefatura_de_Gabinete_de_Ministros_Marcos_Peña_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Jefatura_de_Gabinete_de_Ministros_Marcos_Peña_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Administration"/>
+        <hasAuthority rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Marcos_Peña"/>
+        <hasOffice rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefaturaDeGabineteDeMinistros"/>
+        <hasBeginning rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-10T00:00:00-03:00</hasBeginning>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Marcos_Peña -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Marcos_Peña">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#JefeDeGabinete"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Agroindustria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Agroindustria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Ambiente_y_Desarrollo_Sustentable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Ambiente_y_Desarrollo_Sustentable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Comunicaciones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Comunicaciones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Cultura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Cultura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Defensa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Defensa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Desarrollo_Social -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Desarrollo_Social">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Educación_y_Deportes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Educación_y_Deportes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Energía_y_Minería -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Energía_y_Minería">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Hacienda_y_Finanzas_Públicas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Hacienda_y_Finanzas_Públicas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Justicia_y_Derechos_Humanos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Justicia_y_Derechos_Humanos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Modernización -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Modernización">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Producción -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Producción">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Relaciones_Exteriores_y_Culto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Relaciones_Exteriores_y_Culto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Salud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Salud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Seguridad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Seguridad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Transporte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Transporte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Turismo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Turismo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Presidencia_de_la_Nación -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Presidencia_de_la_Nación">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Ciencia,_Tecnología_e_Innovación_Productiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Ciencia,_Tecnología_e_Innovación_Productiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Trabajo,_Empleo_y_Seguridad_Social -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_de_Trabajo,_Empleo_y_Seguridad_Social">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_del_Interior,_Obras_Públicas_y_Vivienda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Ministerio_del_Interior,_Obras_Públicas_y_Vivienda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniffig/ontologies/estructura-organica-pen#Organisation"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
